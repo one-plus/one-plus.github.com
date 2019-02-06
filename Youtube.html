@@ -1,0 +1,726 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OSINT Toolkit</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets1/css/main.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116667206-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116667206-1');
+</script>	
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>OSINT</strong><span>Toolkit</span></a>
+<nav>
+<a href="#menu">Menu</a>
+</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<ul class="links">
+<li><a href="/Facebook">Facebook</a></li>
+<li><a href="/Twitter">Twitter</a></li>
+<li><a href="/TwitterMonitor">Twitter Monitoring</a></li>
+<li><a href="/Instagram">Instagram et al</a></li>
+<li><a href="/GoogleBing">Google & Bing</a></li>
+<li><a href="/Youtube">Youtube et al</a></li>
+<li><a href="/G+Link">Google+ & LinkedIn</a></li>
+<li><a href="/Misc">Misc</a></li>
+<li><a href="/DocumentSearch">Document Search</a></li>
+<li><a href="/EmailUsername">Email & Username Search</a></li>
+<li><a href="/Bookmarks">Bookmarks</a></li>		
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+<div class="inner">
+<header class="major">
+
+<h1>Youtube, Periscope, Twitch & Dailymotion:</h1>
+</header>
+	
+<h4>Youtube</h4>
+  
+<p>In order to use some of the tools, you must know the channel name of the subject(s) you wish to research. To identify a Youtube channel name you must load the Youtube Profile of your subject and right click the page before selecting View Page Source from the options list. While on the Source Page, press CTRL+F and search for the phrase: "channelId" content=", the subjects channel name will be after this phrase.</p></p> 
+
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+#myInput1 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable1 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable1 th, #myTable1 td {
+    text-align: left; 
+}
+	
+#myInput2 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable2 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable2 th, #myTable2 td {
+    text-align: left; 
+}
+	
+#myInput3 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable3 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable3 th, #myTable3 td {
+    text-align: left; 
+}
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">	
+<table id="myTable">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+	
+<tr><td>General search</td><td>
+
+<script type="text/javascript">
+function doYT3(YT3) {
+window.open('https://www.youtube.com/results?search_query=' + YT3, '_blank');
+}
+</script>
+<form name="YT3" form onsubmit="doYT3(this.YT3.value); return false;">
+<input type="text" name="YT3" size="15" oninput="
+document.YT20.YT20.value = this.value;
+document.YT1.YT1.value = this.value;
+document.YT2.YT2.value = this.value;
+document.YT6.YT6.value = this.value;
+document.YT7.YT7.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Title search</td><td>
+
+<script type="text/javascript">
+function doYT1(YT1) {
+window.open('https://www.youtube.com/results?search_query=intitle%3A' + YT1, '_blank');
+}
+</script>
+<form name="YT1" form onsubmit="doYT1(this.YT1.value); return false;">
+<input type="text" name="YT1" size="15" oninput="
+document.YT3.YT3.value = this.value;
+document.YT20.YT20.value = this.value;
+document.YT2.YT2.value = this.value;
+document.YT6.YT6.value = this.value;
+document.YT7.YT7.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Exact phrase search</td><td>
+
+<script type="text/javascript">
+function doYT2(YT2) {
+window.open('https://www.youtube.com/results?search_query=%22' + YT2 + '%22', '_blank');
+}
+</script>
+<form name="YT2" form onsubmit="doYT2(this.YT2.value); return false;">
+<input type="text" name="YT2" size="15" oninput="
+document.YT3.YT3.value = this.value;
+document.YT1.YT1.value = this.value;
+document.YT20.YT20.value = this.value;
+document.YT6.YT6.value = this.value;
+document.YT7.YT7.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Channel search</td><td>
+
+<script type="text/javascript">
+function doYT4(YT4) {
+window.open('https://www.youtube.com/results?search_query=' + YT4 + '%2C+channel', '_blank');
+}
+</script>
+<form onsubmit="doYT4(this.YT4.value); return false;">
+<input type="text" name="YT4" size="15" placeholder="Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Playlist search</td><td>
+
+<script type="text/javascript">
+function doYT20(YT20) {
+window.open('https://www.youtube.com/results?q=' + YT20 + '&sp=EgIQAw%253D%253D', '_blank');
+}
+</script>
+<form name="YT20" form onsubmit="doYT20(this.YT20.value); return false;">
+<input type="text" name="YT20" size="15" oninput="
+document.YT3.YT3.value = this.value;
+document.YT1.YT1.value = this.value;
+document.YT2.YT2.value = this.value;
+document.YT6.YT6.value = this.value;
+document.YT7.YT7.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Search by upload date</td><td>
+
+<script type="text/javascript">
+function doYT6(YT6) {
+window.open('https://www.youtube.com/results?q=' + YT6 + '&sp=CAI%253D', '_blank');
+}
+</script>
+<form name="YT6" form onsubmit="doYT6(this.YT6.value); return false;">
+<input type="text" name="YT6" size="15" oninput="
+document.YT3.YT3.value = this.value;
+document.YT1.YT1.value = this.value;
+document.YT2.YT2.value = this.value;
+document.YT20.YT20.value = this.value;
+document.YT7.YT7.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Live videos</td><td>
+
+<script type="text/javascript">
+function doYT7(YT7) {
+window.open('https://www.youtube.com/results?q=' + YT7 + '&sp=EgJAAQ%253D%253D', '_blank');
+}
+</script>
+<form name="YT7" form onsubmit="doYT7(this.YT7.value); return false;">
+<input type="text" name="YT7" size="15" oninput="
+document.YT3.YT3.value = this.value;
+document.YT1.YT1.value = this.value;
+document.YT2.YT2.value = this.value;
+document.YT6.YT6.value = this.value;
+document.YT20.YT20.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Basic channel analytics</td><td>
+
+<script type="text/javascript">
+function doYT8(YT8) {
+window.open('http://socialblade.com/youtube/channel/' + YT8, '_blank');
+}
+</script>
+<form name="YT8" form onsubmit="doYT8(this.YT8.value); return false;">
+<input type="text" name="YT8" size="15" oninput="document.YT9.YT9.value = this.value;" placeholder="Channel Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Detailed analytics</td><td>
+
+<script type="text/javascript">
+function doYT9(YT9) {
+window.open('http://socialblade.com/youtube/channel/' + YT9 + '/monthly', '_blank');
+}
+</script>
+<form name="YT9" form onsubmit="doYT9(this.YT9.value); return false;">
+<input type="text" name="YT9" size="15" oninput="document.YT8.YT8.value = this.value;" placeholder="Channel Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Comparison of 2 channels</td><td>
+<script type="text/javascript">
+function doYT10(YT10, YT11) {
+window.open('http://socialblade.com/youtube/compare/' + YT10 + '/' + YT11, '_blank');
+}
+</script>
+
+<form name="YT10" form onsubmit="doYT10(this.YT10.value, this.YT11.value); return false;">
+<input type="text" name="YT10" size="15" oninput="document.YT12.YT12.value = this.value;" placeholder="1st Channel" />
+<input type="text" name="YT11" size="15"  oninput="document.YT12.YT13.value = this.value;" placeholder="2nd Channel" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Comparison of 3 channels</td><td>
+
+<script type="text/javascript">
+function doYT12(YT12, YT13, YT14) {
+window.open('http://socialblade.com/youtube/compare/' + YT12 + '/' + YT13 + '/' + YT14, '_blank');
+}
+</script>
+
+<form name="YT12" form onsubmit="doYT12(this.YT12.value, this.YT13.value, this.YT14.value); return false;">
+<input type="text" name="YT12" size="9"  oninput="document.YT10.YT10.value = this.value;" placeholder="1st Name" />
+<input type="text" name="YT13" size="9"  oninput="document.YT10.YT11.value = this.value;" placeholder="2nd Name" />
+<input type="text" name="YT14" size="9" placeholder="3rd Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+</table>
+
+<br /><h4>Misc Youtube Search Tools:</h4>
+
+<ul><li><a href="https://youtube.github.io/geo-search-tool/search.html" target="_blank">Youtube videos by location</a></li>
+<li><a href="/Bookmarks" target="_blank">Youtube video downloader</a></li>
+<li><a href="https://www.youtube.com/feed/trending" target="_blank">Information currently trending on Youtube</a></li></ul>
+	
+<h4>Periscope</h4>
+	
+<p>In order to use some of the tools, you must know the channel name of the subject(s) or the ID of the video(s) you wish to research.</p>
+
+<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search...">	
+<table id="myTable1">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+<tr><td>General search</td><td>
+
+<script type="text/javascript">
+function doperi3(peri3) {
+window.open('https://www.periscope.tv/search?q=' + peri3, '_blank');
+}
+</script>
+
+<form onsubmit="doperi3(this.peri3.value); return false;">
+<input type="text" name="peri3" size="15" placeholder="Word or phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Account search</td><td>
+
+<script type="text/javascript">
+function doperi2(peri2) {
+window.open('https://www.periscope.tv/' + peri2, '_blank');
+}
+</script>
+
+<form onsubmit="doperi2(this.peri2.value); return false;">
+<input type="text" name="peri2" size="15" placeholder="Account name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Video metadata search</td><td>
+
+<script type="text/javascript">
+function doperi1(peri1) {
+window.open('https://api.periscope.tv/api/v2/getBroadcastPublic?token=' + peri1, '_blank');
+}
+</script>
+
+<form onsubmit="doperi1(this.peri1.value); return false;">
+<input type="text" name="peri1" size="15" placeholder="Video ID" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+</table>
+
+<br /><h4>Misc Periscope Search Tools:</h4>
+
+<ul><li><a href="http://periviewer.com/" target="_blank">Periscope videos</a></li>
+<li><a href="http://www.periscopemap.live/" target="_blank">Live user map</a></li></ul>
+
+<h4>Twitch</h4>
+	
+<p>In order to use some of the tools, you must know the channel name of the subject(s) or the ID of the video(s) you wish to research.</p>
+
+<input type="text" id="myInput2" onkeyup="myFunction2()" placeholder="Search...">	
+<table id="myTable2">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+	
+<tr><td>General community search</td><td>
+
+<script type="text/javascript">
+function doTI1(TI1) {
+window.open('https://www.twitch.tv/communities/' + TI1, '_blank');
+}
+</script>
+<form name="TI1" form onsubmit="doTI1(this.TI1.value); return false;">
+<input type="text" name="TI1" size="15"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Channel (user) search</td><td>
+
+<script type="text/javascript">
+function doTI2(TI2) {
+window.open('https://www.twitch.tv/' + TI2, '_blank');
+}
+</script>
+<form name="TI2" form onsubmit="doTI2(this.TI2.value); return false;">
+<input type="text" name="TI2" size="15" oninput=
+"
+document.TI3.TI3.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI6.TI6.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Channel search - all videos</td><td>
+
+<script type="text/javascript">
+function doTI3(TI3) {
+window.open('https://www.twitch.tv/' + TI3 + '/videos/all', '_blank');
+}
+</script>
+<form name="TI3" form onsubmit="doTI3(this.TI3.value); return false;">
+<input type="text" name="TI3" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI6.TI6.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Detailed channel analytics</td><td>
+
+<script type="text/javascript">
+function doTI4(TI4) {
+window.open('https://socialblade.com/twitch/user/' + TI4 + '/monthly', '_blank');
+}
+</script>
+<form name="TI4" form onsubmit="doTI4(this.TI4.value); return false;">
+<input type="text" name="TI4" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI3.TI3.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI6.TI6.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>Channel events</td><td>
+
+<script type="text/javascript">
+function doTI5(TI5) {
+window.open('https://www.twitch.tv/' + TI5 + '/events', '_blank');
+}
+</script>
+<form name="TI5" form onsubmit="doTI5(this.TI5.value); return false;">
+<input type="text" name="TI5" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI3.TI3.value = this.value;
+document.TI6.TI6.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>Channel followers</td><td>
+
+<script type="text/javascript">
+function doTI6(TI6) {
+window.open('https://www.twitch.tv/' + TI6 + '/followers', '_blank');
+}
+</script>
+<form name="TI6" form onsubmit="doTI6(this.TI6.value); return false;">
+<input type="text" name="TI6" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI3.TI3.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI7.TI7.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>		
+
+<tr><td>Channel(s) account follows</td><td>
+
+<script type="text/javascript">
+function doTI7(TI7) {
+window.open('https://www.twitch.tv/' + TI7 + '/following', '_blank');
+}
+</script>
+<form name="TI7" form onsubmit="doTI7(this.TI7.value); return false;">
+<input type="text" name="TI7" size="15" oninput=
+"
+document.TI2.TI2.value = this.value;
+document.TI4.TI4.value = this.value;
+document.TI3.TI3.value = this.value;
+document.TI5.TI5.value = this.value;
+document.TI6.TI6.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Basic video search</td><td>
+
+<script type="text/javascript">
+function doTI8(TI8) {
+window.open('https://player.twitch.tv/?video=v' + TI8, '_blank');
+}
+</script>
+<form name="TI8" form onsubmit="doTI8(this.TI8.value); return false;">
+<input type="text" name="TI8" size="15" oninput=
+"
+document.TI9.TI9.value = this.value;
+"
+placeholder="Video ID" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Detailed video search</td><td>
+
+<script type="text/javascript">
+function doTI9(TI9) {
+window.open('https://www.twitch.tv/videos/' + TI9, '_blank');
+}
+</script>
+<form name="TI9" form onsubmit="doTI9(this.TI9.value); return false;">
+<input type="text" name="TI9" size="15" oninput=
+"
+document.TI8.TI8.value = this.value;
+"
+placeholder="Video ID" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+</table>
+
+<br /><h4>Misc Twitch Search Tools:</h4>
+
+<ul><li><a href="https://www.twitch.tv/directory/all" target="_blank">All Twitch videos</a></li>
+<li><a href="http://concat.org/twitch-clips-discovery/" target="_blank">Concat Twitch advanced search</a></li></ul>
+	
+<h4>Dailymotion</h4>
+
+<p>In order to use some of the tools, you must know the channel name of the subject(s) or the ID of the video(s) you wish to research.</p>
+
+<input type="text" id="myInput3" onkeyup="myFunction3()" placeholder="Search...">	
+<table id="myTable3">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>		
+
+<tr><td>Channel (user) search</td><td>
+
+<script type="text/javascript">
+function doDM1(DM1) {
+window.open('https://www.dailymotion.com/' + DM1 + '/videos', '_blank');
+}
+</script>
+<form name="DM1" form onsubmit="doDM1(this.DM1.value); return false;">
+<input type="text" name="DM1" size="15" oninput=
+"
+document.DM2.DM2.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>Detailed channel analytics</td><td>
+
+<script type="text/javascript">
+function doDM2(DM2) {
+window.open('https://socialblade.com/dailymotion/user/' + DM2 + '/monthly', '_blank');
+}
+</script>
+<form name="DM2" form onsubmit="doDM2(this.DM2.value); return false;">
+<input type="text" name="DM2" size="15" oninput=
+"
+document.DM1.DM1.value = this.value;
+"
+placeholder="Channel name" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>General search</td><td>
+
+<script type="text/javascript">
+function doDM3(DM3) {
+window.open('https://www.dailymotion.com/search/' + DM3, '_blank');
+}
+</script>
+<form name="DM3" form onsubmit="doDM3(this.DM3.value); return false;">
+<input type="text" name="DM3" size="15" 
+placeholder="Word or phrase" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+<tr><td>Video search</td><td>
+
+<script type="text/javascript">
+function doDM4(DM4) {
+window.open('https://www.dailymotion.com/video/' + DM4, '_blank');
+}
+</script>
+<form name="DM4" form onsubmit="doDM4(this.DM4.value); return false;">
+<input type="text" name="DM4" size="15" 
+placeholder="Video ID" />
+<input type="submit" value="Search" /></form></td></tr>	
+	
+</table>
+
+<br /><h4>Misc Dailymotion Search Tools:</h4>
+
+<ul><li><a href="https://www.dailymotion.com/archived/index.html">Dailymotion video archive</a></li></ul>
+	
+<p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+	
+<script>
+function myFunction1() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable1");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+<script>
+function myFunction2() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput2");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable2");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+	
+<script>
+function myFunction3() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput3");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable3");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+	
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2018. All rights reserved.</li>
+<li>To contact the Toolkit Admin Team, please click <a href="https://goo.gl/forms/AulahlwOYMKBCz562" target="_blank">here</a>.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
+	
+</body>
+</html>

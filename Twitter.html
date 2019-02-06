@@ -1,0 +1,483 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OSINT Toolkit</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets1/css/main.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116667206-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116667206-1');
+</script>	
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>OSINT</strong><span>Toolkit</span></a>
+<nav>
+<a href="#menu">Menu</a>
+</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<ul class="links">
+<li><a href="/Facebook">Facebook</a></li>
+<li><a href="/Twitter">Twitter</a></li>
+<li><a href="/TwitterMonitor">Twitter Monitoring</a></li>
+<li><a href="/Instagram">Instagram et al</a></li>
+<li><a href="/GoogleBing">Google & Bing</a></li>
+<li><a href="/Youtube">Youtube et al</a></li>
+<li><a href="/G+Link">Google+ & LinkedIn</a></li>
+<li><a href="/Misc">Misc</a></li>
+<li><a href="/DocumentSearch">Document Search</a></li>
+<li><a href="/EmailUsername">Email & Username Search</a></li>
+<li><a href="/Bookmarks">Bookmarks</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+<div class="inner">
+<header class="major">
+
+<h1>Twitter:</h1>
+</header>
+				
+<p>In order to use some of the tools, you must know the Twitter Account Name of the subject(s) you wish to research. A Twitter Account Name is normally displayed on a users profile after the '@' symbol. If it is not shown right click the page and select View Page Source from the list of options. While on the Source Page, press CTRL+F and search for the phrase "@", the subjects Twitter Account Name will be displayed after this symbol.</p>
+
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">
+<table id="myTable">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+<tr><td>Posts based on keywords</td>
+<td>
+<script type="text/javascript">
+function dotwor(man) {
+window.open('https://twitter.com/search?q="' + man + '"%20', '_blank');
+}
+</script>
+<form name="twor" form onsubmit="dotwor(this.man.value); return false;">
+<input type="text" name="man" size="15" oninput="
+document.tps1.tps1.value = this.value;
+document.ta1.ta1.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+
+<tr><td>Posts based on location</td>
+<td>
+<script type="text/javascript">
+function dotwgps(lat, long, distance) {
+window.open('https://twitter.com/search?q=geocode%3A' + lat + '%2C' + long + '%2C' + distance + 'km&src=typd', '_blank');
+}
+</script>
+
+<form onsubmit="dotwgps(this.lat.value, this.long.value, this.distance.value); return false;">
+<input type="text" name="lat" size="7" placeholder="Lat" />
+<input type="text" name="long" size="7" placeholder="Long" />
+<input type="text" name="distance" size="10" placeholder="KM (Minimum 1)" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Profile by real name</td>
+<td>
+<script type="text/javascript">
+function dotw5(tw5) {
+window.open('https://twitter.com/search?mode=users&q=' + tw5, '_blank');
+}
+</script>
+<form onsubmit="dotw5(this.tw5.value); return false;">
+<input type="text" name="tw5" size="15" placeholder="Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Alternative by name</td>
+<td>
+<script type="text/javascript">
+function dotw20(tw20, tw21) {
+window.open('https://socialbearing.com/search/people/' + tw20 + '%20' + tw21, '_blank');
+}
+</script>
+<form onsubmit="dotw20(this.tw20.value, this.tw21.value); return false;">
+<input type="text" name="tw20" size="15" placeholder="First Name" />
+<input type="text" name="tw21" size="15" placeholder="Last Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Profile by account name</td>
+<td>
+<script type="text/javascript">
+function dotw2(tw2) {
+window.open('https://twitter.com/' + tw2, '_blank');
+}
+</script>
+<form name="tw2" form onsubmit="dotw2(this.tw2.value); return false;">
+<input type="text" name="tw2" size="15" oninput="
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Twitter ID by account name</td>
+<td>
+<script type="text/javascript">
+function dotid1(tid1) {
+window.open('http://gettwitterid.com/?user_name=' + tid1 + '&submit=GET+USER+ID', '_blank');
+}
+</script>
+<form name="tid1" form onsubmit="dotid1(this.tid1.value); return false;">
+<input type="text" name="tid1" size="15" oninput="
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Account bio changes</td>
+<td>
+<script type="text/javascript">
+function dota8(ta8) {
+window.open('http://bioischanged.com/' + ta8, '_blank');
+}
+</script>
+<form name="ta8" form onsubmit="dota8(this.ta8.value); return false;">
+<input type="text" name="ta8" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Account information via Google</td>
+<td>
+<script type="text/javascript">
+function dotw022(tw022) {
+window.open('https://www.google.co.uk/search?q=site:twitter.com+-inurl:status+%22' + tw022 + '%22&gws_rd=cr&ei=d24fWIacDcGFgAbC_KGQBA', '_blank');
+}
+</script>
+<form name="tw022" form onsubmit="dotw022(this.tw022.value); return false;">
+<input type="text" name="tw022" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Tweets by user</td>
+<td>
+<script type="text/javascript">
+function dotw3(tw3) {
+window.open('https://twitter.com/search?q=from%3A' + tw3 + '&src=typd', '_blank');
+}
+</script>
+<form name="tw3" form onsubmit="dotw3(this.tw3.value); return false;">
+<input type="text" id="fb3" name="tw3" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Posts between specific dates</td>
+<td>
+<script type="text/javascript">
+function dota5(ta5, ta6, ta7) {
+window.open('https://twitter.com/search?q=from%3A' + ta5 + '%20since%3A' + ta6 + '%20until%3A' + ta7 + '&src=typd', '_blank');
+}
+</script>
+<form name="ta5" form onsubmit="dota5(this.ta5.value, this.ta6.value, this.ta7.value); return false;">
+<input type="text" name="ta5" size="6" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Name" />
+<input type="text" name="ta6" size="11" placeholder="Start YYYY-MM-DD" />
+<input type="text" name="ta7" size="10" placeholder="End YYYY-MM-DD" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Tweets to user</td>
+<td>
+<script type="text/javascript">
+function dotw4(tw4) {
+window.open('https://twitter.com/search?q=to%3A' + tw4 + '&src=typd', '_blank');
+}
+</script>
+<form name="tw4" form onsubmit="dotw4(this.tw4.value); return false;">
+<input type="text" name="tw4" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Media posted</td>
+<td>
+<script type="text/javascript">
+function dota3(ta3) {
+window.open('https://twitter.com/' + ta3 + '/media/', '_blank');
+}
+</script>
+<form name="ta3" form onsubmit="dota3(this.ta3.value); return false;">
+<input type="text" name="ta3" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta4.ta4.value = this.value;
+document.ta2.ta2.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Photo(s) posted by user</td>
+<td>
+<script type="text/javascript">
+function dota4(ta4) {
+window.open('http://twicsy.com/u/' + ta4, '_blank');
+}
+</script>
+<form name="ta4" form onsubmit="dota4(this.ta4.value); return false;">
+<input type="text" name="ta4" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta2.ta2.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>General picture search</td>
+<td>
+<script type="text/javascript">
+function dotps1(tps1) {
+window.open('http://twicsy.com/?search=' + tps1, '_blank');
+}
+</script>
+<form name="tps1" form onsubmit="dotps1(this.tps1.value); return false;">
+<input type="text" name="tps1" size="15" oninput="
+document.twor.man.value = this.value;
+document.ta1.ta1.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>	
+
+<tr><td>Keyword analytics</td>
+<td>
+<script type="text/javascript">
+function dota1(ta1) {
+window.open('https://socialbearing.com/search/general/' + ta1, '_blank');
+}
+</script>
+<form name="ta1" form onsubmit="dota1(this.ta1.value); return false;">
+<input type="text" id="ta1" name="ta1" size="15" oninput="
+document.twor.man.value = this.value;
+document.tps1.tps1.value = this.value;
+"
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Account analytics</td>
+<td>
+<script type="text/javascript">
+function dota2(ta2) {
+window.open('https://socialbearing.com/search/user/' + ta2, '_blank');
+}
+</script>
+<form name="ta2" form onsubmit="dota2(this.ta2.value); return false;">
+<input type="text" name="ta2" size="15" oninput="       
+document.tw2.tw2.value = this.value;
+document.ta8.ta8.value = this.value;
+document.tw022.tw022.value = this.value;
+document.tw3.tw3.value = this.value;
+document.ta5.ta5.value = this.value;
+document.tw4.tw4.value = this.value;
+document.ta3.ta3.value = this.value;
+document.ta4.ta4.value = this.value;
+document.tid1.tid1.value = this.value;
+"
+placeholder="Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Mutual follows - 2 accounts</td>
+<td>
+<script type="text/javascript">
+function dotw9a(one, two) {
+window.open('http://followerwonk.com/compare/' + one + '/' + two, '_blank');
+}
+</script>
+
+<form name="tw9" form onsubmit="dotw9a(this.one.value, this.two.value); return false;">
+<input type="text" name="one" size="15" oninput="document.tw10.A.value = this.value;" placeholder="1st Account" />
+<input type="text" name="two" size="15" oninput="document.tw10.B.value = this.value;" placeholder="2nd Account" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Mutual follows - 3 accounts</td>
+<td>
+<script type="text/javascript">
+function dotw10(A, B, C) {
+window.open('http://followerwonk.com/compare/' + A + '/' + B + '/' + C, '_blank');
+}
+</script>
+<form name="tw10" form onsubmit="dotw10(this.A.value, this.B.value, this.C.value); return false;">
+<input type="text" name="A" size="9" oninput="document.tw9.one.value = this.value;" placeholder="1st Account" />
+<input type="text" name="B" size="9" oninput="document.tw9.two.value = this.value;" placeholder="2nd Account" />
+<input type="text" name="C" size="9" placeholder="3rd Account" />
+<input type="submit" value="Search" /></form></td></tr>
+
+</table>
+
+<br /><h4>Misc Twitter Tools:</h4>
+
+<ul><li><a href="http://www.tagsleuth.com/" target="_blank">Tag Sleuth</a></li>
+<li><a href="http://www.tweetarchivist.com/" target="_blank">Tweet Archivist</a></li>	
+<li><a href="http://onemilliontweetmap.com/" target="_blank">One Million Tweet Map</a></li>	
+<li><a href="https://twitter.com/i/directory/profiles" target="_blank">Twitter User Directory</a></li>
+<li><a href="https://twitter.com/search-advanced" target="_blank">Twitter Advanced Search</a></li>
+<li><a href="https://tweeterid.com/" target="_blank">Alternative Twitter ID finder</a></li>
+<li><a href="http://geosocialfootprint.com/#" target="_blank">Twitter Geolocation Tool</a></li>
+<li><a href="http://app.teachingprivacy.org/" target="_blank">Alternative Twitter Geolocation Tool</a></li>	
+<li><a href="https://www.twitonomy.com" target="_blank">Alternative Twitter Analytics</a></li>
+<li><a href="https://twitter.com/i/moments?lang=en-gb" target="_blank">Information currently trending on Twitter</a></li></ul>
+
+<p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>	
+	
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2018. All rights reserved.</li>
+<li>To contact the Toolkit Admin Team, please click <a href="https://goo.gl/forms/AulahlwOYMKBCz562" target="_blank">here</a>.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
+	
+</body>
+</html>

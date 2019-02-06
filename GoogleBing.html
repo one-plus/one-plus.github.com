@@ -1,0 +1,521 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OSINT Toolkit</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets1/css/main.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116667206-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116667206-1');
+</script>	
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>OSINT</strong><span>Toolkit</span></a>
+<nav>
+<a href="#menu">Menu</a>
+</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<ul class="links">
+<li><a href="/Facebook">Facebook</a></li>
+<li><a href="/Twitter">Twitter</a></li>
+<li><a href="/TwitterMonitor">Twitter Monitoring</a></li>
+<li><a href="/Instagram">Instagram et al</a></li>
+<li><a href="/GoogleBing">Google & Bing</a></li>
+<li><a href="/Youtube">Youtube et al</a></li>
+<li><a href="/G+Link">Google+ & LinkedIn</a></li>
+<li><a href="/Misc">Misc</a></li>
+<li><a href="/DocumentSearch">Document Search</a></li>
+<li><a href="/EmailUsername">Email & Username Search</a></li>
+<li><a href="/Bookmarks">Bookmarks</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+<div class="inner">
+<header class="major">
+
+<h1>Google & Bing:</h1>
+</header>
+
+<h4>Google</h4>	
+	
+<p>Google has a large library of search operators that can help with internet-based research, below is just a selection of them.</p>
+
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+#myInput1 {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable1 {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable1 th, #myTable1 td {
+    text-align: left; 
+}
+
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">	
+<table id="myTable">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+<tr><td>General search</td><td>
+
+<script type="text/javascript">
+function doBES1(BES1) {
+window.open('https://www.google.co.uk/#q=' + BES1, '_blank');
+}
+</script>
+<form name="BES1" form onsubmit="doBES1(this.BES1.value); return false;">
+<input type="text" name="BES1" size="15"  oninput="
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES200.BES200.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
+<input value="Search" type="submit"></form></td></tr>
+
+<tr><td>Exact phrase search</td><td>
+	
+<script type="text/javascript">
+function doSE1(SE1) {
+window.open('https://www.google.co.uk/#q=%22' + SE1 + '%22', '_blank');
+}
+</script>
+<form name="SE1" form onsubmit="doSE1(this.SE1.value); return false;">
+<input type="text" name="SE1" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES200.BES200.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>This or that</td><td>
+
+<script type="text/javascript">
+function doSE2(SE2, SE3) {
+window.open('https://www.google.com/?gfe_rd=cr&ei=BXoBV-HAHoOFaObuipAG#q=' + SE2 + '+OR+' + SE3, '_blank');
+}
+</script>
+<form name="SE2" form onsubmit="doSE2(this.SE2.value, this.SE3.value); return false;">
+<input type="text" name="SE2" size="15" oninput="
+document.GT5.GT5.value = this.value;
+document.GT7.GT7.value = this.value;
+" 
+placeholder="1st Phrase" />
+<input type="text" name="SE3" size="15" oninput="
+document.GT5.GT6.value = this.value;
+document.GT7.GT8.value = this.value;
+" 
+placeholder="2nd Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Words in text</td><td>
+
+<script type="text/javascript">
+function doSE4(SE4) {
+window.open('https://www.google.com/?gfe_rd=cr&ei=Ee8BV5v1MNiFaPPmjJAF#q=allintext:+' + SE4, '_blank');
+}
+</script>
+<form name="SE4" form onsubmit="doSE4(this.SE4.value); return false;">
+<input type="text" name="SE4" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES200.BES200.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Search within a website</td><td>
+
+<script type="text/javascript">
+function doSE10(SE10, SE11) {
+window.open('https://www.google.com/#q=site:' + SE10 + '+' + '"' + SE11 + '"', '_blank');
+}
+</script>
+<form name="SE10" form onsubmit="doSE10(this.SE10.value, this.SE11.value); return false;">
+<input type="text" name="SE10" size="15" oninput="
+document.SE15.SE15.value = this.value;
+document.SE17.SE17.value = this.value;
+document.BES2.BES2.value = this.value;
+" 
+placeholder="Website" />
+<input type="text" name="SE11" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES200.BES200.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Links to a site</td><td>
+
+<script type="text/javascript">
+function doSE15(SE15) {
+window.open('https://www.google.com/#q=link:' + SE15, '_blank');
+}
+</script>
+<form name="SE15" form onsubmit="doSE15(this.SE15.value); return false;">
+<input type="text" name="SE15" size="15" oninput="
+document.SE10.SE10.value = this.value;
+document.SE17.SE17.value = this.value;
+document.BES2.BES2.value = this.value;
+" 
+placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Related sites</td><td>
+
+<script type="text/javascript">
+function doSE17(SE17) {
+window.open('https://www.google.com/#q=related:' + SE17, '_blank');
+}
+</script>
+<form name="SE17" form onsubmit="doSE17(this.SE17.value); return false;">
+<input type="text" name="SE17" size="15" oninput="
+document.SE10.SE10.value = this.value;
+document.SE15.SE15.value = this.value;
+document.BES2.BES2.value = this.value;
+" 
+placeholder="Website" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Cached website view</td><td>
+
+<script type="text/javascript">
+function doBES2(BES2) {
+window.open('https://www.google.co.uk/search?q=cache%3A' + BES2, '_blank');
+}
+</script>
+<form name="BES2" form onsubmit="doBES2(this.BES2.value); return false;">
+<input type="text" name="BES2" size="15"  oninput="
+document.SE10.SE10.value = this.value;
+document.SE15.SE15.value = this.value;
+document.SE17.SE17.value = this.value;
+" 
+placeholder="Website">
+<input value="Search" type="submit"></form></td></tr>
+
+<tr><td>General search of Google Trends</td><td>
+
+<script type="text/javascript">
+function doGT1(GT1) {
+window.open('https://www.google.co.uk/trends/explore?q=' + GT1, '_blank');
+}
+</script>
+<form name="GT1" form onsubmit="doGT1(this.GT1.value); return false;">
+<input type="text" name="GT1" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES200.BES200.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
+<input value="Search" type="submit"></form></td></tr>	
+
+<tr><td>Specific search of Google Trends</td><td>
+
+<script type="text/javascript">
+function doGT2(GT2, GT3, GT4) {
+window.open('https://www.google.co.uk/trends/explore?date=' + GT3 + '%20' + GT4 + '&q=' + GT2, '_blank');
+}
+</script>
+<form name="GT2" form onsubmit="doGT2(this.GT2.value, this.GT3.value, this.GT4.value); return false;">
+<input type="text" name="GT2" size="6" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.BES200.BES200.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Phrase" />
+<input name="GT3" size="11" placeholder="Start YYYY-MM-DD" type="text">
+<input name="GT4" size="10" placeholder="End YYYY-MM-DD" type="text">	
+<input value="Search" type="submit"></form></td></tr>		
+
+<tr><td>Compare 2 search terms</td><td>
+
+<script type="text/javascript">
+function doGT5(GT5, GT6) {
+window.open('https://www.google.co.uk/trends/explore?q=' + GT5 + ',' + GT6, '_blank');
+}
+</script>
+<form name="GT5" form onsubmit="doGT5(this.GT5.value, this.GT6.value); return false;">
+<input type="text" name="GT5" size="15" oninput="
+document.SE2.SE2.value = this.value;
+document.GT7.GT7.value = this.value;
+" 
+placeholder="1st Term">
+<input type="text" name="GT6" size="15" oninput="
+document.SE2.SE3.value = this.value;
+document.GT7.GT8.value = this.value;
+" 
+placeholder="2nd Term">
+<input value="Search" type="submit"></form></td></tr>
+
+<tr><td>Compare 3 search terms</td><td>
+	
+<script type="text/javascript">
+function doGT7(GT7, GT8, GT9) {
+window.open('https://www.google.co.uk/trends/explore?q=' + GT7 + ',' + GT8 + ',' + GT9, '_blank');
+}
+</script>
+
+<form name="GT7" form onsubmit="doGT7(this.GT7.value, this.GT8.value, this.GT9.value); return false;">
+<input type="text" name="GT7" size="9" oninput="
+document.SE2.SE2.value = this.value;
+document.GT5.GT5.value = this.value;
+" 
+placeholder="1st Term">
+<input type="text" name="GT8" size="9" oninput="
+document.SE2.SE3.value = this.value;
+document.GT5.GT6.value = this.value;
+" 
+placeholder="2nd Term">
+<input name="GT9" size="9" placeholder="3rd Term" type="text">	
+<input value="Search" type="submit"></form></td></tr>	
+	
+</table>
+
+<br /><h4>Misc Google Search Tools:</h4>
+	
+<ul>
+<li><a href="http://www.usabilityviews.com/simply_google.htm" target="_blank">Combined Google Search</a></li>
+<li><a href="https://www.google.com/advanced_search" target="_blank">Advanced Google Search</a></li>
+<li><a href="https://www.google.com/advanced_image_search" target="_blank">Advanced Google Image Search</a></li>
+<li><a href="http://isearchfrom.com/" target="_blank">Google Searches from Different Locations & Devices</a></li></ul>
+
+<h4>Bing:</h4>
+
+<p>Bing has many of the same search operators offered by Google, but it has a few tricks not found anywhere else.</p>	
+	
+<input type="text" id="myInput1" onkeyup="myFunction1()" placeholder="Search...">
+<table id="myTable1">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+<tr><td>General search</td><td>
+
+<script type="text/javascript">
+function doBES200(BES200) {
+window.open('https://www.bing.com/search?q=' + BES200 + '&go=Submit+Query&qs=bs&form=QBLH', '_blank');
+}
+</script>
+<form name="BES200" form onsubmit="doBES200(this.BES200.value); return false;">
+<input type="text" name="BES200" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.SEB1.SEB1.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
+<input value="Search" type="submit"></form></td></tr>
+
+<tr><td>Exact phrase search</td><td>
+
+<script type="text/javascript">
+function doSEB1(SEB1) {
+window.open('https://www.bing.com/search?q=%E2%80%9C' + SEB1 + '%E2%80%9D&go=Submit+Query&qs=ds&form=QBRE', '_blank');
+}
+</script>
+<form name="SEB1" form onsubmit="doSEB1(this.SEB1.value); return false;">
+<input type="text" name="SEB1" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES200.BES200.value = this.value;
+document.SEB8.SEB8.value = this.value;
+" 
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Sites matching IP address</td><td>
+
+<script type="text/javascript">
+function doSEB7(SEB7) {
+window.open('https://www.bing.com/search?q=ip%3A' + SEB7 + '&go=Submit+Query&qs=ds&form=QBRE', '_blank');
+}
+</script>
+<form onsubmit="doSEB7(this.SEB7.value); return false;">
+<input type="text" name="SEB7" size="15" placeholder="IP address" />
+<input type="submit" value="Search" /></form></td></tr>
+
+<tr><td>Website feeds</td><td>
+
+<script type="text/javascript">
+function doSEB8(SEB8) {
+window.open('https://www.bing.com/search?q=feed%3A' + SEB8 + '&go=Submit+Query&qs=bs&form=QBLH', '_blank');
+}
+</script>
+<form name="SEB8" form onsubmit="doSEB8(this.SEB8.value); return false;">
+<input type="text" name="SEB8" size="15" oninput="
+document.BES1.BES1.value = this.value;
+document.SE1.SE1.value = this.value;
+document.SE4.SE4.value = this.value;
+document.SE10.SE11.value = this.value;
+document.GT1.GT1.value = this.value;
+document.GT2.GT2.value = this.value;
+document.BES200.BES200.value = this.value;
+document.SEB1.SEB1.value = this.value;
+" 
+placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+
+</table>
+
+<br /><h4>Misc Bing Search Tools:</h4>
+
+<ul><li><a href="http://help.bing.microsoft.com/#apex/18/en-US/n1999/-1/en-US" target="_blank">Bing Help Page</a></li></ul>
+
+<p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>	
+<script>
+function myFunction1() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput1");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable1");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>		
+
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2018. All rights reserved.</li>
+<li>To contact the Toolkit Admin Team, please click <a href="https://goo.gl/forms/AulahlwOYMKBCz562" target="_blank">here</a>.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
+	
+</body>
+</html>

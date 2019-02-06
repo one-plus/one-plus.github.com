@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>OSINT Toolkit</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets1/css/main.css" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116667206-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-116667206-1');
+</script>	
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header">
+<a href="index.html" class="logo"><strong>OSINT</strong><span>Toolkit</span></a>
+<nav>
+<a href="#menu">Menu</a>
+</nav>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+<ul class="links">
+<li><a href="/Facebook">Facebook</a></li>
+<li><a href="/Twitter">Twitter</a></li>
+<li><a href="/TwitterMonitor">Twitter Monitoring</a></li>
+<li><a href="/Instagram">Instagram et al</a></li>
+<li><a href="/GoogleBing">Google & Bing</a></li>
+<li><a href="/Youtube">Youtube et al</a></li>
+<li><a href="/G+Link">Google+ & LinkedIn</a></li>
+<li><a href="/Misc">Misc</a></li>
+<li><a href="/DocumentSearch">Document Search</a></li>
+<li><a href="/EmailUsername">Email & Username Search</a></li>
+<li><a href="/Bookmarks">Bookmarks</a></li>
+</ul>
+</nav>
+
+<!-- Main -->
+<div id="main" class="alt">
+
+<!-- One -->
+<section id="one">
+<div class="inner">
+<header class="major">
+<h1>Twitter Monitoring:</h1>
+</header>
+
+<p>To use this tool please either type in a Twitter account name or search phrase into the relevant box below, excluding any @ or # symbols. After a short delay, the Search Output box, below, will display any results generated. </p>
+
+<style>
+#myInput {
+    width: 98%; 
+    font-size: 16px; 
+    margin-bottom: 12px; 
+
+}
+#myTable {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+#myTable th, #myTable td {
+    text-align: left; 
+}
+	
+</style>
+	
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">
+<table id="myTable">
+<col style="width:30%">  
+<col style="width:70%">  	
+<tr>
+<th>Overview:</th>
+<th>Tool:</th>
+</tr>
+
+<tr><td>Keyword(s) or # search</td>
+<td>
+<script type="text/javascript">
+function docm1(cm1) {
+window.open('https://socialbearing.com/search/general/' + cm1, 'theFrame');
+}
+</script>   
+<form onsubmit="docm1(this.cm1.value); return false;">
+<input type="text" id="cm1" name="cm1" size="15" placeholder="Word or Phrase" />
+<input type="submit" value="Search" /></form></td></tr>
+	
+<tr><td>Account search</td>
+<td>
+<script type="text/javascript">
+function docm2(cm2) {
+window.open('https://socialbearing.com/search/user/' + cm2, 'theFrame');
+}
+</script>   
+<form onsubmit="docm2(this.cm2.value); return false;">
+<input type="text" id="cm2" name="cm2" size="15" placeholder="Twitter Account Name" />
+<input type="submit" value="Search" /></form></td></tr>
+
+</table>
+
+<br /><h4>Search Output:</h4>
+	
+<p>Please see the output from your search below.</p>
+
+<iframe name='theFrame' width="900" height="1500"></iframe>
+
+<br /><br /><p><a href="#top">Back To Top</a></p>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>		
+
+</div>
+</section>
+</div>
+
+<!-- Footer -->
+<footer id="footer">
+<div class="inner">
+<ul class="copyright">
+<li>&copy; Copyright 2018. All rights reserved.</li>
+<li>To contact the Toolkit Admin Team, please click <a href="https://goo.gl/forms/AulahlwOYMKBCz562" target="_blank">here</a>.</li>
+</ul>
+</div>
+</footer>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets1/js/jquery.min.js"></script>
+<script src="assets1/js/jquery.scrolly.min.js"></script>
+<script src="assets1/js/jquery.scrollex.min.js"></script>
+<script src="assets1/js/skel.min.js"></script>
+<script src="assets1/js/util.js"></script>
+<script src="assets1/js/main.js"></script>
+<script src="assets1/js/scroll.js"></script>
+<script src="assets1/js/scroll2.js"></script>
+</body>
+</html>
